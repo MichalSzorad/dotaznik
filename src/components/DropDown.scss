@@ -1,0 +1,60 @@
+@import "../constants";
+
+$component-dropdown--button-size: 2em;
+
+.component-dropdown--wrapper {
+  position: relative;
+}
+
+.component-dropdown--button-opened {
+  background: #dddddd !important;
+}
+
+.component-dropdown--content-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.component-dropdown--button-wrapper {
+  display: inline-block;
+  width: $component-dropdown--button-size;
+  position: absolute;
+  height: $component-dropdown--button-size;
+  margin-left: -$component-dropdown--button-size;
+}
+
+.component-dropdown--button {
+  width: 100%;
+  height: 100%;
+  border-left-width: 0;
+  margin-top: 2px;
+  cursor: pointer;
+  text-align: center;
+  background: #f8f9fc;
+  border-radius: 50%;
+  transition: 0.2s all ease-in-out;
+}
+
+.component-dropdown--icon-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.component-dropdown--item-wrapper {
+  background: #efefef;
+  margin: 0;
+}
+
+.component-dropdown--item {
+  padding: 10px 5px;
+  margin-bottom: 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.component-dropdown--item:hover {
+  background: #efefef;
+  color: $main-color-darker;
+}

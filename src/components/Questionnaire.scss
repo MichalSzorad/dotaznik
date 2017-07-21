@@ -1,0 +1,69 @@
+@import "../constants";
+
+.component-questionnaire--wrapper {
+  position: relative;
+}
+
+.component-questionnaire--close-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.4em;
+  @media screen and (max-width: $break-large) {
+    font-size: 2em;
+  }
+}
+
+.component-questionnaire--title {
+  text-align: center;
+  font-weight: 100;
+  color: $main-color;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  @media screen and (max-width: $break-small) {
+    margin-bottom: 50px;
+  }
+}
+
+.component-questionnaire--block {
+  margin-top: 20px;
+  overflow: hidden;
+  @media screen and (max-width: $break-small) {
+    margin-top: 0;
+  }
+}
+
+.component-questionnaire--block-half {
+  width: calc(50% - 2em);
+  margin: 0em 1em;
+  float: left;
+  @media screen and (max-width: $break-small) {
+    width: calc(100% - 2em);
+    margin-top: 20px;
+  }
+}
+
+.component-questionnaire--block-full {
+  width: calc(100% - 2em);
+  margin: 0em 1em;
+  @media screen and (max-width: $break-small) {
+    margin-top: 20px;
+  }
+}
+
+.component-questionnaire--spaced {
+  padding: 0 10px;
+}
+
+.component-questionnaire--button {
+  float: right;
+  @media screen and (max-width: $break-small) {
+    margin-top: 20px;
+  }
+}
+
+.component-questionnaire--warning {
+  color: orangered;
+  text-align: center;
+  padding:0 5px;
+}

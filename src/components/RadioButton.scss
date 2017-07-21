@@ -1,0 +1,49 @@
+@import "../constants";
+
+$color1: #f4f4f4;
+$color2: $main-color;
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  + .component-radiobutton--label {
+    &:before {
+      content: '';
+      background: $color1;
+      border-radius: 100%;
+      border: 1px solid #777777;
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+      margin-right: 0.5em;
+      margin-left: 0.5em;;
+      vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      transition: all 250ms ease;
+    }
+  }
+  &:checked {
+    + .component-radiobutton--label {
+      &:before {
+        background-color: $color2;
+        box-shadow: 0 0 0 4px $color1;
+      }
+    }
+  }
+}
+
+.component-radiobutton--wrapper {
+  display: inline-block;
+  font-size: $input-font-size;
+  padding-top: 16px;
+}
+
+.component-radiobutton--input {
+  -webkit-appearance: none;
+}
+
+.component-radiobutton--label {
+  cursor: pointer;
+}

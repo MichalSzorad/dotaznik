@@ -1,0 +1,14 @@
+.page-thank-you-page--wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.page-thank-you-page--title {
+  position: absolute;
+  top: 39%;
+  width: 100%;
+  transform: translateY(-50%);
+  font-weight: 100;
+}

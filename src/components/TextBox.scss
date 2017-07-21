@@ -1,0 +1,17 @@
+@import "../constants";
+
+$color1: $main-color;
+.component-textbox--input:focus {
+
+}
+
+.component-textbox--input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: $input-font-size;
+  border: 0;
+  border-bottom: 1px solid #444444;
+  background: transparent;
+  transition:0.2s all ease-in-out;
+
+}

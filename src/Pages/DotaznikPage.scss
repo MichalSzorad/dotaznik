@@ -1,0 +1,18 @@
+@import "../constants";
+
+.page-questions-page--wrapper {
+  width: 50%;
+  max-width: $break-large;
+  margin: 100px auto 0 auto;
+
+  @media screen and (max-width: $break-large) {
+    width:80%
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: calc(100% - 20px);
+    margin: 20px auto 0 auto;
+  }
+}
+
+
